@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>みやこキャピタルHP 試作</title>
-<meta name="description" content="みやこキャピタル株式会社のコーポレートサイトの試作（社内確認用）。v1.4 と v2.2 の2つの版を見比べられます。">
+<meta name="description" content="みやこキャピタル株式会社のコーポレートサイトの試作（社内確認用）。v1.4・v2.2・v3.0 の3つの版を見比べられます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,21 +13,25 @@
 :root{color-scheme:light;--bg:#F7F5F0;--paper:#FFFFFF;--ink:#1F1F1F;--sub:#5C5A55;--line:#DCD7CC;--accent:#2E4A7D;--gold:#8A6A22}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.8}
-.wrap{max-width:960px;margin:0 auto;padding:64px 24px 80px}
+.wrap{max-width:1120px;margin:0 auto;padding:64px 24px 80px}
 .logo{height:34px;width:auto;display:block;margin-bottom:40px}
 h1{font-size:clamp(22px,3vw,28px);margin:0 0 8px;letter-spacing:.04em}
 .note{color:var(--sub);margin:0 0 6px;font-size:15px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .card{background:var(--paper);border:1px solid var(--line);padding:32px 28px}
 .ver{font-family:"Cormorant Garamond",serif;font-size:56px;line-height:1;margin:0;color:var(--accent)}
 .card:nth-child(2) .ver{color:var(--gold)}
+.card:nth-child(3) .ver{color:#1238FF}
+.card{display:flex;flex-direction:column}
+.card .links{margin-top:auto}
 .card h2{font-size:18px;margin:14px 0 8px}
 .card p{margin:0 0 20px;font-size:14.5px;color:var(--sub)}
 .links{display:flex;gap:10px;flex-wrap:wrap}
 .links a{display:inline-block;text-decoration:none;border:1px solid var(--accent);color:var(--accent);padding:8px 20px;font-size:15px;transition:background .25s,color .25s}
 .links a:hover,.links a:focus-visible{background:var(--accent);color:#fff}
 .foot{margin-top:48px;font-size:13px;color:var(--sub)}
-@media (max-width:700px){.wrap{padding:40px 16px 56px}.cards{grid-template-columns:1fr}}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}
+@media (max-width:700px){.wrap{padding:40px 16px 56px}}
 </style>
 </head>
 <body>
@@ -35,7 +39,7 @@ h1{font-size:clamp(22px,3vw,28px);margin:0 0 8px;letter-spacing:.04em}
   <img class="logo" src="v1.4/images/logo.png" alt="MIYAKO Capital みやこキャピタル" width="640" height="243">
   <h1>みやこキャピタルHP　コーポレートサイトの試作</h1>
   <p class="note">社内確認用の試作です。正式なサイトではありません。</p>
-  <p class="note">2つの版を見比べられます。文章・事実は同じで、見せ方と動きが違います。</p>
+  <p class="note">3つの版を見比べられます。文章・事実は同じで、見せ方と動きが違います。</p>
   <div class="cards">
     <section class="card">
       <p class="ver">v1.4</p>
@@ -48,6 +52,12 @@ h1{font-size:clamp(22px,3vw,28px);margin:0 0 8px;letter-spacing:.04em}
       <h2>動きのある版</h2>
       <p>スクロールに合わせた動きと、金の差し色・光の演出を入れた版です。PC でマウスを動かしながらご覧ください。</p>
       <div class="links"><a href="v2.2/index.html">日本語</a><a href="v2.2/en/index.html" lang="en">English</a></div>
+    </section>
+    <section class="card">
+      <p class="ver">v3.0</p>
+      <h2>IVS 風の版</h2>
+      <p>流れる光沢の背景・大きな英字の見出し・流れる帯を入れた、青を基調にした版です。</p>
+      <div class="links"><a href="v3.0/index.html">日本語</a><a href="v3.0/en/index.html" lang="en">English</a></div>
     </section>
   </div>
   <p class="foot">© MIYAKO Capital Co., Ltd.</p>
